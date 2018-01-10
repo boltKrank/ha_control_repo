@@ -1,7 +1,7 @@
 class profile::base {
 
   # Export host resource
-  @@host { $facts['hostname'] :
+  @@host { $facts['fqdn'] :
     ip => $facts['ipaddress'],
   }
 
