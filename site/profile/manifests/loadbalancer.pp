@@ -20,7 +20,7 @@ class profile::loadbalancer {
   haproxy::balancermember { 'compile1':
     listening_service => 'loadbalancer',
     server_names      => 'compile1.localdomain',
-    ipaddresses       => '192.168.0.42',
+    ipaddresses       => '192.168.0.57',
     ports             => '8140',
     options           => 'check',
   }
@@ -28,7 +28,7 @@ class profile::loadbalancer {
   haproxy::balancermember { 'compile2':
     listening_service => 'loadbalancer',
     server_names      => 'compile2.localdomain',
-    ipaddresses       => '192.168.0.47',
+    ipaddresses       => '192.168.0.58',
     ports             => '8140',
     options           => 'check',
   }
